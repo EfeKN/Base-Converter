@@ -7,8 +7,7 @@ public class basecon {
         Stack<Integer> divisionStack = new Stack<>();
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("Enter an integer to convert:");
-        System.out.println();
+        System.out.print("Enter an integer to convert: ");
         int input = sc.nextInt();
         int inputC = input; //copy of the input
         
@@ -22,7 +21,7 @@ public class basecon {
         while(!divisionStack.empty()) {
             output += Integer.toString(divisionStack.pop());
         }
-        System.out.println("This integer equals to " + output + ".\n");
+        System.out.println("This integer equals to " + output + ".");
 
         sc.close();
     }
