@@ -42,6 +42,8 @@ public class calculator {
 
             /* As a temporary solution random cannot produce zeros */
 
+            /* Generating numbers via string might be good solution for this problem */
+
     int randomBinaryNumber(int digit) {
         return randomBaseNumber(digit, 2);
     }
