@@ -22,7 +22,7 @@ public class basecon {
         //
         for(int i=100; i>0; i--) 
         {
-            int rand = cal.randomBinaryNumber(2);
+            int rand = cal.randBin(5);
             System.out.println("Binary: " + rand);
             System.out.println("Decimal Value: " + cal.convertDecimal(rand, 2));
         }

@@ -48,6 +48,23 @@ public class calculator {
         return randomBaseNumber(digit, 2);
     }
 
+    int randBin(int digit) {
+        Random rand = new Random();
+        if(digit<1) 
+        {
+            return 0;
+        }
+        else if(digit==1)
+        {
+            return rand.nextInt(2);
+        }
+        String rBin = "1";
+        for(int i=1; i<digit; i++) {
+            rBin += rand.nextInt(2);
+        }
+        return Integer.valueOf(rBin); 
+    }
+
     int randomBaseNumber(int digit, int base) {
         Random r = new Random();
         int gNumber = 0;
